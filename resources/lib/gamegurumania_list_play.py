@@ -143,10 +143,9 @@ class Main:
 					xbmc.log( "[ADDON] %s v%s (%s) debug mode, %s = %s" % ( __addon__, __version__, __date__, "title", str(title) ), xbmc.LOGNOTICE )
 				
 				#Find youtubeID
-				#<iframe width="560" height="315" src="http://www.youtube.com/embed/9MiMjQwd2VE" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-				youtubeID = video_page_url_iframe['src']
-				video_page_url_iframe_len = len(youtubeID)
-				youtubeID = youtubeID[len("http://www.youtube.com/embed/"):video_page_url_iframe_len]
+				#<iframe width="560" height="315" src="//www.youtube.com/embed/9MiMjQwd2VE" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				youtubeID = str(video_page_url_iframe['src'])
+				youtubeID = youtubeID.replace("//www.youtube.com/embed/", '')
 				youtube_url = 'plugin://plugin.video.youtube/?action=play_video&videoid=%s' % youtubeID
 						
 				if (self.DEBUG) == 'true':
