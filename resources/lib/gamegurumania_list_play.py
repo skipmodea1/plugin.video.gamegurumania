@@ -102,10 +102,16 @@ class Main:
 			if nadpis_found == True and iframe_found == True:
 				#Find Title
 				#<a class="nadpis" name="shadowrun-returns-alpha-gameplay-video-34776" href="http://www.ggmania.com/?smsid=shadowrun-returns-alpha-gameplay-video-34776">Shadowrun Returns - Alpha Gameplay Video</a>
-				title = video_page_url_napdis['name']
-				title = title [0:len(title)-len('-34761')]
+				#title = video_page_url_napdis['name']
+				#title = title [0:len(title)-len('-34761')]		
+					
+				video_page_url_napdis_str = str(video_page_url_napdis)
+				start_pos_title = video_page_url_napdis_str.find(">") + 1
+				title = video_page_url_napdis_str[start_pos_title:]
+				title = title.replace("</a>","")
+		
 				title = title.capitalize()
-				title = title.replace('-',' ')
+# 				title = title.replace('-',' ')
 				title = title.replace('/',' ')
 				title = title.replace(' i ',' I ')
 				title = title.replace(' amp ',' & ')
@@ -138,7 +144,7 @@ class Main:
 				title = title.replace(' xxviii ',' XXVIII ')
 				title = title.replace(' xxix ',' XXIX ')
 				title = title.replace(' xxx ',' XXX ')
-				
+
 				if (self.DEBUG) == 'true':
 					xbmc.log( "[ADDON] %s v%s (%s) debug mode, %s = %s" % ( __addon__, __version__, __date__, "title", str(title) ), xbmc.LOGNOTICE )
 				
