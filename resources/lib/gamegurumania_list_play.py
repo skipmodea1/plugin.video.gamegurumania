@@ -102,8 +102,6 @@ class Main:
 			if nadpis_found == True and iframe_found == True:
 				#Find Title
 				#<a class="nadpis" name="shadowrun-returns-alpha-gameplay-video-34776" href="http://www.ggmania.com/?smsid=shadowrun-returns-alpha-gameplay-video-34776">Shadowrun Returns - Alpha Gameplay Video</a>
-				#title = video_page_url_napdis['name']
-				#title = title [0:len(title)-len('-34761')]		
 					
 				video_page_url_napdis_str = str(video_page_url_napdis)
 				start_pos_title = video_page_url_napdis_str.find(">") + 1
@@ -111,7 +109,6 @@ class Main:
 				title = title.replace("</a>","")
 		
 				title = title.capitalize()
-# 				title = title.replace('-',' ')
 				title = title.replace('/',' ')
 				title = title.replace(' i ',' I ')
 				title = title.replace(' amp ',' & ')
@@ -161,7 +158,7 @@ class Main:
 				listitem = xbmcgui.ListItem( title, iconImage="DefaultVideo.png", thumbnailImage=thumbnail_url )
 				listitem.setInfo( "video", { "Title" : title, "Studio" : "GameGuruMania" } )
 				listitem.setProperty('IsPlayable', 'true')
-				plugin_play_url = youtube_url 
+				plugin_play_url = youtube_url
 				folder = False
 				xbmcplugin.addDirectoryItem( handle=int(sys.argv[ 1 ]), url=plugin_play_url, listitem=listitem, isFolder=folder)
 				

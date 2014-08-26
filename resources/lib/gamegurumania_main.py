@@ -19,64 +19,65 @@ import xbmcplugin
 #
 class Main:
     def __init__( self ):
+        
         #
-        # Movie
+        # All Vidoes
         #
-        parameters = {"action" : "list-play", "plugin_category" : __language__(30000), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=movie", "next_page_possible": "True"}
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30000), "url" : "http://www.ggmania.com/more.php3?next=000", "next_page_possible": "True"}
         url = sys.argv[0] + '?' + urllib.urlencode(parameters)
         listitem = xbmcgui.ListItem( __language__(30000), iconImage="DefaultFolder.png" )
         folder = True
         xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)
-       
+        
         #
-        # Console
+        # Movie
         #
-        parameters = {"action" : "list-play", "plugin_category" : __language__(30001), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=console", "next_page_possible": "True"}
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30001), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=movie", "next_page_possible": "True"}
         url = sys.argv[0] + '?' + urllib.urlencode(parameters)
         listitem = xbmcgui.ListItem( __language__(30001), iconImage="DefaultFolder.png" )
         folder = True
         xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)
        
         #
-        # Preview
+        # Console
         #
-        parameters = {"action" : "list-play", "plugin_category" : __language__(30002), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=preview", "next_page_possible": "True"}
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30002), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=console", "next_page_possible": "True"}
         url = sys.argv[0] + '?' + urllib.urlencode(parameters)
         listitem = xbmcgui.ListItem( __language__(30002), iconImage="DefaultFolder.png" )
         folder = True
         xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)
-        
+       
         #
-        # Tech
+        # Preview
         #
-        parameters = {"action" : "list-play", "plugin_category" : __language__(30003), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=tech", "next_page_possible": "True"}
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30003), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=preview", "next_page_possible": "True"}
         url = sys.argv[0] + '?' + urllib.urlencode(parameters)
         listitem = xbmcgui.ListItem( __language__(30003), iconImage="DefaultFolder.png" )
         folder = True
         xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)
         
         #
-        # Demo
+        # Tech
         #
-        parameters = {"action" : "list-play", "plugin_category" : __language__(30004), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=demo", "next_page_possible": "True"}
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30004), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=tech", "next_page_possible": "True"}
         url = sys.argv[0] + '?' + urllib.urlencode(parameters)
         listitem = xbmcgui.ListItem( __language__(30004), iconImage="DefaultFolder.png" )
         folder = True
         xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)
         
         #
-        # Interview
+        # Demo
         #
-        parameters = {"action" : "list-play", "plugin_category" : __language__(30005), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=interview", "next_page_possible": "True"}
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30005), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=demo", "next_page_possible": "True"}
         url = sys.argv[0] + '?' + urllib.urlencode(parameters)
         listitem = xbmcgui.ListItem( __language__(30005), iconImage="DefaultFolder.png" )
         folder = True
         xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)
         
         #
-        # Gold
+        # Interview
         #
-        parameters = {"action" : "list-play", "plugin_category" : __language__(30006), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=gold", "next_page_possible": "True"}
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30006), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=interview", "next_page_possible": "True"}
         url = sys.argv[0] + '?' + urllib.urlencode(parameters)
         listitem = xbmcgui.ListItem( __language__(30006), iconImage="DefaultFolder.png" )
         folder = True
@@ -99,7 +100,15 @@ class Main:
         listitem = xbmcgui.ListItem( __language__(30008), iconImage="DefaultFolder.png" )
         folder = True
         xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)
-        
+
+        #
+        # Gold
+        #
+        parameters = {"action" : "list-play", "plugin_category" : __language__(30009), "url" : "http://www.ggmania.com/more.php3?next=000&kategory=gold", "next_page_possible": "True"}
+        url = sys.argv[0] + '?' + urllib.urlencode(parameters)
+        listitem = xbmcgui.ListItem( __language__(30009), iconImage="DefaultFolder.png" )
+        folder = True
+        xbmcplugin.addDirectoryItem( handle = int(sys.argv[ 1 ] ), url = url, listitem=listitem, isFolder=folder)        
         # Disable sorting...
         xbmcplugin.addSortMethod( handle=int( sys.argv[ 1 ] ), sortMethod=xbmcplugin.SORT_METHOD_NONE )
 		

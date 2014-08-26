@@ -3,15 +3,16 @@
     <!--
      * Main
      -->
-    <string id="30000">Videos</string>
-    <string id="30001">Console</string>
-    <string id="30002">Preview</string>
-    <string id="30003">Tech</string>
-    <string id="30004">Demo</string>
-    <string id="30005">Interview</string>
-    <string id="30006">Freegame</string>
-    <string id="30007">Media</string>
-    <string id="30008">Gold</string>
+    <string id="30000">Alle Videos</string>
+    <string id="30001">Movie</string>
+    <string id="30002">Console</string>
+    <string id="30003">Preview</string>
+    <string id="30004">Tech</string>
+    <string id="30005">Demo</string>
+    <string id="30006">Interview</string>
+    <string id="30007">Freegame</string>
+    <string id="30008">Media</string>
+    <string id="30009">Gold</string>
 
     <!-- 
      * Settings labels 
