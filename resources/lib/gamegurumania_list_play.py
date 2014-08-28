@@ -110,6 +110,7 @@ class Main:
 		
 				title = title.capitalize()
 				title = title.replace('/',' ')
+				title = title.replace('&amp;','&')
 				title = title.replace(' i ',' I ')
 				title = title.replace(' amp ',' & ')
 				title = title.replace(' ii ',' II ')
