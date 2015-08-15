@@ -1,3 +1,6 @@
+v1.0.3 (Saturday, 15 august 2015):
+- added utf-8 stuff
+
 v1.0.2 (Thursday, 2 oktober 2014):
 - adjusted because of website changes
 

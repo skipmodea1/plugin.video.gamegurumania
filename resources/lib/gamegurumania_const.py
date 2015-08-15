@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
 import os
 import xbmcaddon
 
@@ -11,5 +14,5 @@ __addon__       = "plugin.video.gamegurumania"
 __plugin__      = "GameGuruMania"
 __author__      = "Skipmode A1"
 __url__         = ""
-__date__        = "02 oktober 2014"
-__version__     = "1.0.2"
+__date__        = "15 august 2015"
+__version__     = "1.0.3"
