@@ -6,13 +6,10 @@ import xbmcaddon
 
 #
 # Constants
-# 
-__settings__    = xbmcaddon.Addon(id='plugin.video.gamegurumania')
-__language__    = __settings__.getLocalizedString
-__images_path__ = os.path.join( xbmcaddon.Addon(id='plugin.video.gamegurumania').getAddonInfo('path'), 'resources', 'images' )
-__addon__       = "plugin.video.gamegurumania"
-__plugin__      = "GameGuruMania"
-__author__      = "Skipmode A1"
-__url__         = ""
-__date__        = "15 august 2015"
-__version__     = "1.0.3"
+#
+ADDON = "plugin.video.gamegurumania"
+SETTINGS = xbmcaddon.Addon(id=ADDON)
+LANGUAGE = SETTINGS.getLocalizedString
+IMAGES_PATH = os.path.join(xbmcaddon.Addon(id=ADDON).getAddonInfo('path'), 'resources', 'images')
+DATE = "2016-03-12"
+VERSION = "1.0.4"
