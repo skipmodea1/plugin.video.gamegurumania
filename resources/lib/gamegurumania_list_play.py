@@ -111,12 +111,6 @@ class Main:
                     ADDON, VERSION, DATE, "skipped item without youtube", str(item)), xbmc.LOGDEBUG)
                 continue
 
-            # Skip these items
-            if str(item).find('class="nadpis"') < 0:
-                xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
-                    ADDON, VERSION, DATE, "skipped item without napis", str(item)), xbmc.LOGDEBUG)
-                continue
-
             xbmc.log("[ADDON] %s v%s (%s) debug mode, %s = %s" % (
                 ADDON, VERSION, DATE, "item", str(item)), xbmc.LOGDEBUG)
 
