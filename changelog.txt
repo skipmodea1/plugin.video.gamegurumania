@@ -1,3 +1,7 @@
+v1.0.7-SNAPSHOT (2017-12-28)
+- addon now works in kode python 2 and also 3 (!!) thanks to the future project
+- addon.xml contains NOT YET SUPPORTED python3 tag
+
 v1.0.6 (2017-07-12)
 - added listitem.setInfo video for Kodi 18 and up
 - added sorting
