@@ -8,7 +8,7 @@ from __future__ import absolute_import
 from future import standard_library
 standard_library.install_aliases()
 from builtins import object
-from .gamegurumania_const import ADDON, SETTINGS, LANGUAGE, IMAGES_PATH, DATE, VERSION
+from .gamegurumania_const import LANGUAGE, IMAGES_PATH
 import sys
 import urllib.request, urllib.parse, urllib.error
 import xbmcgui
