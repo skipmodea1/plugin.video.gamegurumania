@@ -24,7 +24,7 @@
 	<disclaimer lang="nl">Bugs of andere feedback op deze plugin kan geplaatst worden in de ggmania.com thread op het XBMC forum.</disclaimer>
     <language>en</language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+    <license>GPL-2.0-or-later</license>
     <forum>http://forum.xbmc.org/showthread.php?tid=203210</forum>
     <website>http://ggmania.com</website>
     <email></email>
