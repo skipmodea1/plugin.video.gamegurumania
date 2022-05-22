@@ -2,7 +2,7 @@
 <addon 
 	id="plugin.video.gamegurumania" 
 	name="Gamegurumania" 
-	version="1.0.8"
+	version="1.0.7"
 	provider-name="Skipmode A1">
   <requires>
     <import addon="xbmc.python"                     version="2.14.0"/>
@@ -25,8 +25,8 @@
     <language>en</language>
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
-    <forum>https://forum.xbmc.org/showthread.php?tid=203210</forum>
-    <website>https://ggmania.com</website>
+    <forum>http://forum.xbmc.org/showthread.php?tid=203210</forum>
+    <website>http://ggmania.com</website>
     <email></email>
     <source>https://github.com/skipmodea1/plugin.video.gamegurumania</source>
   </extension>
