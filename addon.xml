@@ -36,5 +36,6 @@
       <icon>resources/icon.png</icon>
       <fanart>resources/fanart.jpg</fanart>
     </assets>
+    <broken>Marked addon BROKEN for gotham branch</broken>
   </extension>
 </addon>
