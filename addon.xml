@@ -27,7 +27,7 @@
     <license>GPL-2.0-or-later</license>
     <forum>https://forum.xbmc.org/showthread.php?tid=203210</forum>
     <website>https://ggmania.com</website>
+    <email></email>
     <source>https://github.com/skipmodea1/plugin.video.gamegurumania</source>
-    <broken>Marked addon BROKEN for gotham branch</broken>	
   </extension>
 </addon>
