@@ -29,5 +29,6 @@
     <website>http://ggmania.com</website>
     <email></email>
     <source>https://github.com/skipmodea1/plugin.video.gamegurumania</source>
+    <broken>Marked addon BROKEN for gotham branch</broken>
   </extension>
 </addon>
